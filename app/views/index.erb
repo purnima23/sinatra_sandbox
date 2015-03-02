@@ -1,0 +1,67 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <p>Hello, world!</p>
+<!--
+  <table>
+    <tr>
+        <th>File Description</th>
+        <th>File Location</th>
+      </tr>
+      <tr>
+        <td>This view file</td>
+        <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
+      </tr>
+      <tr>
+        <td>The layout file</td>
+        <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+      </tr>
+      <tr>
+        <td>The current controller</td>
+        <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+      </tr>
+  </table>
+ -->
+  <form action="/cool_url" method="get">
+    Name <input type="text" name="user_input">
+    <br>
+    Menu <select name="mydropdown">
+    <br>
+      <option value="Milk">Fresh Milk</option>
+      <option value="Cheese">Old Cheese</option>
+      <option value="Bread">Hot Bread</option>
+    </select>
+    <br>
+    Additional Request <input Post title! type="text" name="post[title]">
+    <br>
+     Mood <input type="text" name="post[mood]"> <input type="submit" value="Get">
+    <br>
+      <div align = "center">
+  </div>
+    </form>
+  <form action="/cool_url" method="post">
+    <br>
+    <input type="checkbox" name="option1" value="Spicy"> Spicy<br>
+    <input type="checkbox" name="option2" value="Mild Spicy" checked> Mild Spicy
+    <br>
+    <input type="checkbox" name="option3" value="Herbs"> Herbs<br>
+    <br>
+    Other Flavours <input type="text" name="user_input">
+    <input type="submit" value="Post">
+    <br>
+    <br>
+    <textarea name="post[description]"
+        cols="25" rows="5"
+        style="width:160px;height:90px;background-color:#D0F18F;"> Post description!
+      </textarea>
+      <br>
+      <br>
+      <input type="submit" value="SUBMIT :)">
+    </div>
+  </form>
+
+
+
+</div>
+
+
+
